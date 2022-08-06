@@ -14,25 +14,21 @@ class Pekerja{
             cout << "Company: " << Company << endl;
         };
 
+        Pekerja(string name, string company, int age){
+            Name = name;
+            Company = company;
+            Age = age;
+        };
+
 };
 
 int main(){
 
-    Pekerja pekerja;
-
-    pekerja.Age = 18;
-    pekerja.Name = "Hazeeq";
-    pekerja.Company = "Intel";
+    Pekerja pekerja("Hazeeq", "Intel", 18);
     pekerja.introduceYourself();
 
-    Pekerja pekerja2;
-
-    pekerja2.Name = "Afrina";
-    pekerja2.Age  = 18;
-    pekerja2.Company = "TESL";
+    Pekerja pekerja2("Afrina", "TESL", 18);
     pekerja2.introduceYourself();
-
-
 
     return 0;
 }
