@@ -2,22 +2,20 @@
 
 using namespace std;
 
-class Pekerja{
-    public:
-        string Name;
-        string Company;
-        int Age;
+class Pekerja {
+   public:
+    string Name;
+    string Company;
+    int Age;
 
-        void introduceYourself(){
-            cout << "Name: " << Name << endl;
-            cout << "Age: " << Age << endl;
-            cout << "Company: " << Company << endl;
-        };
-
+    void introduceYourself() {
+        cout << "Name: " << Name << endl;
+        cout << "Age: " << Age << endl;
+        cout << "Company: " << Company << endl;
+    };
 };
 
-int main(){
-
+int main() {
     Pekerja pekerja;
 
     pekerja.Age = 18;
@@ -28,11 +26,9 @@ int main(){
     Pekerja pekerja2;
 
     pekerja2.Name = "Afrina";
-    pekerja2.Age  = 18;
+    pekerja2.Age = 18;
     pekerja2.Company = "TESL";
     pekerja2.introduceYourself();
-
-
 
     return 0;
 }
